@@ -28,6 +28,11 @@ pipeline {
                 sh 'echo "$(Person)"'
             }
         }
+        stage('echo line') {
+            steps {
+               echo 'firt step'
+            }
+        }
         stage('Continue ?') {
             input {
                 message "should we continue"
