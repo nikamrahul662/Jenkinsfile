@@ -33,6 +33,11 @@ pipeline {
                echo 'firt step'
             }
         }
+        stage('run command') {
+            steps {
+               sh 'pwd'
+            }
+        }
         stage('Continue ?') {
             input {
                 message "should we continue"
